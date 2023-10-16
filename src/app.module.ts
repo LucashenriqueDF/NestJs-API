@@ -9,9 +9,10 @@ import { PostService } from './services/post-service/post.service'
 import { UpdateService } from './services/update-service/update.service'
 import { GetService } from './services/get-service/get.service'
 import { DeleteService } from './services/delete-service/delete.service'
+import { SupabaseUtils } from './utils/supa'
 
 @Module({
-    imports: [],
+    imports: [SupabaseUtils,],
     controllers: [
         AppController,
         PostController,
