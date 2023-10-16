@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { DeleteController } from './delete-controller.controller';
+import { DeleteController } from '../../src/controllers/delete-controller/delete-controller.controller';
 
 describe('DeleteController', () => {
   let controller: DeleteController;

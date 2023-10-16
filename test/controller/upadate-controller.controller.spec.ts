@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { UpadateController } from './upadate-controller.controller';
+import { UpadateController } from '../../src/controllers/upadate-controller/upadate-controller.controller';
 
 describe('UpadateController', () => {
   let controller: UpadateController;
