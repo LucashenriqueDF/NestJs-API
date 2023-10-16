@@ -1,9 +1,11 @@
-import { Controller } from '@nestjs/common';
-// import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
+import { Controller, Get, Post } from '@nestjs/common'
+import { PostService } from 'src/services/post-service/post-service.service'
+@Controller('post')
+export class PostController {
+    constructor(private readonly postservice: PostService) {}
 
-
-@Controller('post-controller')
-
-
-
-export class PostControllerController {}
+    @Post()
+    PostMessenger() {
+        return this.postservice.PostMessenger()
+    }
+}

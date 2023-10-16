@@ -1,15 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { DeleteControllerController } from './delete-controller.controller';
+import { DeleteController } from './delete-controller.controller';
 
-describe('DeleteControllerController', () => {
-  let controller: DeleteControllerController;
+describe('DeleteController', () => {
+  let controller: DeleteController;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      controllers: [DeleteControllerController],
+      controllers: [DeleteController],
     }).compile();
 
-    controller = module.get<DeleteControllerController>(DeleteControllerController);
+    controller = module.get<DeleteController>(DeleteController);
   });
 
   it('should be defined', () => {
